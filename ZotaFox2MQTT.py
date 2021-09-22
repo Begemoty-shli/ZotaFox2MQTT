@@ -8,7 +8,7 @@ import subprocess
 
 #Выбираем источник. По сети или локально через com-port
 SOURCE = 'STREAM'
-streamIP = '192.168.10.124'
+streamIP = '192.168.0.1'
 streamPORT = 23
 # SOURCE = 'SERIAL'
 serialPORT = "/dev/ttyUSB0"
