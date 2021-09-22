@@ -1,0 +1,59 @@
+sensor:
+  - platform: mqtt
+    name: "Состояние котла"
+    state_topic: "/ZotaFox/State"
+    unique_id: "Состояние котла"
+
+  - platform: mqtt
+    name: "Мощность котла"
+    state_topic: "/ZotaFox/PowerKW"
+    device_class: "power"
+    unit_of_measurement: "кВт"
+    unique_id: "Мощность котла"
+
+  - platform: mqtt
+    name: "Уровень топлива котла"
+    state_topic: "/ZotaFox/FuelLevel"
+    unit_of_measurement: "%"
+    unique_id: "Уровень топлива котла"
+
+  - platform: mqtt
+    name: "Уровень пламени котла"
+    state_topic: "/ZotaFox/Fire"
+    unit_of_measurement: "%"
+    unique_id: "Уровень пламени котла"
+
+  - platform: mqtt
+    name: "Количество розжигов котла"
+    state_topic: "/ZotaFox/Ignitions"
+    unit_of_measurement: "раз"
+    unique_id: "Количество розжигов котла"
+
+  - platform: mqtt
+    name: "Температура горелки котла"
+    state_topic: "/ZotaFox/TempBurner"
+    device_class: "temperature"
+    unit_of_measurement: "°C"
+    unique_id: "Температура горелки котла"
+
+  - platform: mqtt
+    name: "Температура СО котла"
+    state_topic: "/ZotaFox/TempCO"
+    device_class: "temperature"
+    unit_of_measurement: "°C"
+    unique_id: "Температура СО котла"
+
+  - platform: mqtt
+    name: "Установленная max температура СО котла"
+    state_topic: "/ZotaFox/TempCOmaxset"
+    device_class: "temperature"
+    unit_of_measurement: "°C"
+    unique_id: "Установленная max температура СО котла"
+
+  - platform: mqtt
+    name: "Температура улицы котла"
+    state_topic: "/ZotaFox/TempOut"
+    device_class: "temperature"
+    unit_of_measurement: "°C"
+    unique_id: "Температура улицы котла"
+
