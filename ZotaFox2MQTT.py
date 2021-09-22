@@ -56,7 +56,7 @@ def parseFrame08(message):
     Fire = struct.unpack("f", bytes(message[FIRE_float:FIRE_float+4])) [0]
     igns = struct.unpack("H", bytes(message[IGNITIONS_short:IGNITIONS_short+2])) [0]
     
-        if PrintToConsole == "1":
+    if PrintToConsole == "1":
         print(f"Состояние: {OperStatus}")
         print(f"Температура горелки: {tempCWU:.1f}")
         print(f"Температура теплоносителя: {tempCO:.1f}")
